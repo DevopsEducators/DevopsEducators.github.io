@@ -210,7 +210,7 @@ ul {
 
 ul {
     list-style-type: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     overflow: hidden;
     border: white;
@@ -238,6 +238,10 @@ li a:hover{
     background-color: #4A799E;
 }
 
+.inner {
+    min-width: 620px;
+    max-width: 40px;
+  }
 
 /***********************/
 
@@ -302,7 +306,7 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 640px;
+  max-width: 340px;
   padding: 20px 10px;
   margin: 0 auto;
 }
@@ -425,7 +429,7 @@ Small Device Styles
   }
 
   .inner {
-    min-width: 320px;
+    min-width: 620px;
     max-width: 480px;
   }
 
