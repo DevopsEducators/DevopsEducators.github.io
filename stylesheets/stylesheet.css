@@ -59,7 +59,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 10px 0;
+  margin: 0 10px;
   font-weight: 700;
   color:#222222;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
@@ -136,16 +136,16 @@ strong {
 img {
   position: relative;
   margin: 0 auto;
-  max-width: 739px;
+  max-width: 769px;
   padding: 5px;
-  margin: 10px 0 10px 0;
-  border: 1px solid #ebebeb;
+  border: 5px solid black;
 
-  box-shadow: 0 0 5px #ebebeb;
-  -webkit-box-shadow: 0 0 5px #ebebeb;
-  -moz-box-shadow: 0 0 5px #ebebeb;
-  -o-box-shadow: 0 0 5px #ebebeb;
-  -ms-box-shadow: 0 0 5px #ebebeb;
+  border-radius: 10%;
+
+  -webkit-box-shadow: 0 0 5px black;
+  -moz-box-shadow: 0 0 5px black;
+  -o-box-shadow: 0 0 5px black;
+  -ms-box-shadow: 0 0 5px black;
 }
 
 p img {
@@ -197,7 +197,7 @@ blockquote {
 
 
 ul, ol, dl {
-  margin-bottom: 15px
+  /* margin-bottom: 15px */
 }
 
 ul {
@@ -208,19 +208,26 @@ ul {
 
 /*********** Customized Nav ************/
 
-ul {
+.ul_class {
     list-style-type: none;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     overflow: hidden;
     border: white;
     background-color: #333;
+    margin-bottom:0;
 }
 
 li {
     float: left;
+	
+    /* display: inline; */
+	max-width: 300px;
 }
 
+.li_margin{
+	margin: 0 35px;
+}
 
 li a {
     display: block;
@@ -238,10 +245,50 @@ li a:hover{
     background-color: #4A799E;
 }
 
-.inner {
-    min-width: 620px;
-    max-width: 40px;
-  }
+#NavOutDiv{
+    text-align: center;
+    width: 100%;
+    margin: 0 0 -8px 0;
+    background-color: #333;
+}
+
+#NavInDiv{
+    text-align: left;
+    display: inline-block;
+}
+
+
+/****  Image Holder*****/
+
+#img_wrap {
+  background: #f2f2f2;
+  padding-top: 20px;
+}
+
+#main_content_img {
+  text-align: center;
+  /* display: inline-block; */
+  background: #f2f2f2;
+  border: 3px solid black;
+
+  border-radius: 5%;
+  -moz-border-radius: 5%;
+  -webkit-border-radius: 5%;
+
+}
+
+#ImageHolder{
+   /* background: #f2f2f2; */
+   background: #f2f2f2;
+}
+
+#ImageContainer{
+    text-align: left;
+    color: black;
+    background: #f2f2f2;
+    margin: 0 5px;
+    width: 100%;
+}
 
 /***********************/
 
@@ -306,8 +353,8 @@ Full-Width Styles
 
 .inner {
   position: relative;
-  max-width: 340px;
-  padding: 20px 10px;
+  max-width: 600px;
+ padding: 20px 10px;
   margin: 0 auto;
 }
 
@@ -327,21 +374,26 @@ Full-Width Styles
 }
 
 #header_wrap {
+ /*
   background: #4A799E;
   background: -moz-linear-gradient(top, #373737, #4A799E);
   background: -webkit-linear-gradient(top, #373737, #4A799E);
   background: -ms-linear-gradient(top, #373737, #4A799E);
   background: -o-linear-gradient(top, #373737, #4A799E);
   background: linear-gradient(top, #373737, #4A799E);
+  */
+
+  background-image: url("../images/university.jpg");
+
+  background-image: -moz-url("../images/university.jpg");
+  background-image: -webkit-url("../images/university.jpg");
+  background-image: -ms-url("../images/university.jpg");
+  background-image: -o-url("../images/university.jpg");
+  background-image: -liner-url("../images/university.jpg");
 }
 
 #header_wrap .inner {
   padding: 50px 10px 30px 10px;
-}
-
-/*******Customized********/
-#nav_container{
-
 }
 
 #project_title {
@@ -401,19 +453,65 @@ Full-Width Styles
 
 #main_content_wrap {
   background: #f2f2f2;
-  border-top: 1px solid #111;
+  /* border-top: 1px solid #111; */
   border-bottom: 1px solid #111;
 }
 
 #main_content {
-  padding-top: 40px;
+ /*  padding-top: 20px; */
 }
 
 #footer_wrap {
   background: #212121;
 }
 
+#person_portfolio_container {
+  padding-top: 20px;
+  background-color: rgba(74, 121, 158,0.3);
+/* #4A799E; */
+  border-radius: 5%;
+}
 
+#person_folio_info{
+  text_align: left;
+  color:black;
+  overflow: auto;
+}
+
+.inner_left {
+  position: relative;
+  max-width: 600px;
+  margin: 10px 20px 10px 260px;
+  padding: 20px 10px;
+}
+
+.inner_right {
+  position: relative;
+  max-width: 600px;
+  padding: 20px 10px;
+  margin: 10px 20px 10px 300px;
+}
+
+.org_title_class{
+  text-align: left;
+}
+
+#org_title {
+  margin: 0;
+  color: #111;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.folio_img_float_left {
+   float: left;
+    margin: 0 10px;
+}
+
+.folio_img_float_right {
+   float: right;
+    margin: 0 10px;
+}
 
 /*******************************************************************************
 Small Device Styles
