@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <!-- Google Map -->
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+	function initialize(){
+	    var mapProp = {
+		center: new google.maps.LatLng(47.622821, -122.337478),
+		zoom:15,
+		mapTypeId:google.maps.MapTypeId.ROADMAP
+	    };
+
+	    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+	    var marker=new google.maps.Marker({
+                position: map.getCenter(),
+                <!-- animation: google.maps.Animation.BOUNCE -->
+		animation: google.maps.Animation.DROP
+            });
+
+            marker.setMap(map);
+	}
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Devops Educators Workshop 2016: Nov 19, Northeastern University, Seattle Campus">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Devops Educators Workshop 2016</title>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+
+          <h1 id="project_title">Devops Educators Workshop </h1>
+          <h2 id="project_tagline">Nov 19 2016, Northeastern University, Seattle Campus</h2>
+
+        </header>
+    </div>
+
+<!-- <div id="nav_container"> -->
+	<div id="NavOutDiv">
+        <div id="NavInDiv">
+
+            <ul class="ul_class">
+                <li class="li_margin"><a href="index.html">HOME</a></li>
+                <li class="li_margin"><a href="organizers.html">ORGANIZERS</a></li>
+		<li class="li_margin"><a href="register.html">REGISTRATION</a></li>
+		<li class="active li_margin"><a href="venue.html">VENUES & HOTELS</a></li>
+                <li class="li_margin"><a href="http://releng.polymtl.ca/RELENG2016/html/index.html">Releng</a></li>
+            </ul>
+
+        </div>
+        </div>
+
+
+    <!-- MAIN CONTENT -->
+
+<div id="main_content_wrap" class="outer">
+<div id="main_content" class="inner">
+
+
+<h2><a id="venues" class="anchor" href="#how-to-register" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>VENUE</h2>
+
+<p>The workshop will beheld at <a href="http://www.northeastern.edu/seattle/academic_program/master-of-science-in-computer-science/">the Dept of CS at Northeastern University, Seattle.</a></p></br>
+
+<p>The department is located at <b>Northeastern University, 3rd floor, 225 Terry Ave N, Seattle 98102.</b></p>
+
+<div id="googleMap"></div>
+
+</br></br></br>
+<h2><a id="venues" class="anchor" href="#how-to-register" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>LOCAL HOTELS</h2>
+
+</div>
+
+<div id="main_content" class="venue_inner">
+<table>
+	<tr>
+	    <td><p><img id="hotel_img" src="images/hotels/westlake.jpg" width="200px" height="120px"></p></td>
+	    <td><b>Westlake Ave Downtown Condos by Barsala</b></br><span class="rating-static rating-40"></span></br>$249.00</br>120 Westlake Ave N, Seattle, WA, 98109</br></td>
+
+            <td><p><img class="hotel_img" src="images/hotels/hyattHouse.jpg" width="200px" height="120px"></p></th>
+            <td><b>Hyatt House Seattle/Downtown – Seattle</b></br><span class="rating-static rating-30"></span></br>$150.00</br>201 5th Ave N, Seattle, WA 98109</br></td>
+        </tr>
+	
+	<td><p><img id="hotel_img" src="images/hotels/hyattPlace.jpg" width="200px" height="120px"></p></td>
+            <td><b>Hyatt Place Seattle Downtown – Seattle</b></br><span class="rating-static rating-30"></span></br>$149.00</br>110 6th Ave N, Seattle, WA 98109<br/></td>
+
+            <td><p><img class="hotel_img" src="images/hotels/residenceInn.jpg" width="200px" height="120px"></p></th>
+            <td><b>Residence Inn by Marriott Seattle Downtown/Lake Union</b></br><span class="rating-static rating-30"></span></br>$149.00</br>800 Fairview Avenue North Seattle WA 98109</br></td>
+	</tr>
+
+	<tr>
+	    <td><p><img id="hotel_img" src="images/hotels/holidayInn.jpg" width="200px" height="120px"></p></td>
+            <td><b>Holiday Inn Seattle Downtown</b></br><span class="rating-static rating-30"></span></br>$123.00</br>211 Dexter Ave N Seattle, WA 98109</br></td>
+
+            <td><p><img class="hotel_img" src="images/hotels/holidayInnExpress.jpeg" width="200px" height="120px"></p></th>
+            <td><b>Holiday Inn Express Hotel & Suites Seattle - City Center</b></br><span class="rating-static rating-25"></span></br>$126.00</br>618 John St, Seattle, WA 98109</br></td>
+        </tr>
+	
+	<tr>
+	    <td><p><img class="hotel_img" src="images/hotels/traveloge.jpg" width="200px" height="120px"></p></th>
+            <td><b>Travelodge By The Space Needle</b></br><span class="rating-static rating-20"></span></br>$110.00</br>200 6th Avenue North, South Lake Union, Seattle, WA 98109</br></td>		
+
+	    <td><p><img id="hotel_img" src="images/hotels/executiveInn.jpg" width="200px" height="120px"></p></td>
+            <td><b>Best Western Plus Executive Inn</b></br><span class="rating-static rating-30"></span></br>$108.00</br>200 Taylor Ave N, Seattle, WA 98109</br></td>
+        </tr>
+
+	<tr>
+	    <td><p><img class="hotel_img" src="images/hotels/qualityInn.jpg" width="200px" height="120px"></p></th>
+            <td><b>Quality Inn & Suites Hotel Seattle Center</b></br><span class="rating-static rating-25"></span></br>$107.00</br>618 John St, Seattle, WA 98109</br></td>
+	
+	    <td><p><img id="hotel_img" src="images/hotels/pacific.jpg" width="200px" height="120px"></p></td>
+            <td><b>Seattle Pacific Hotel</b></br><span class="rating-static rating-15"></span></br>$101.00</br>325 Aurora Ave N, Seattle, WA 98109 </br></td>
+        </tr>
+
+</table>
+
+</div>
+</div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+
+  </body>
+</html>

@@ -1,4 +1,4 @@
-/*******************************************************************************
+	/*******************************************************************************
 Slate Theme for GitHub Pages
 by Jason Costello, @jsncostello
 *******************************************************************************/
@@ -26,7 +26,7 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font: inherit;
-  vertical-align: baseline;
+  vertical-align: top;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -248,7 +248,7 @@ li a:hover{
 #NavOutDiv{
     text-align: center;
     width: 100%;
-    margin: 0 0 -8px 0;
+  /*  margin: 0 0 -8px 0; */
     background-color: #333;
 }
 
@@ -290,6 +290,50 @@ li a:hover{
     width: 100%;
 }
 
+/*** venue map and hotels ****/
+
+#googleMap{
+    width:380px;
+    height:380px;
+    margin: auto;
+}
+
+#hotel_img{
+  text-align: center;
+  /* display: inline-block; */
+  background: #f2f2f2;
+}
+
+.venue_inner {
+  position: relative;
+  max-width: 850px;
+  padding: 20px 10px;
+  margin: 0 auto;
+}
+
+b{font-weight:bold;}
+
+.rating-static {
+  width: 60px;
+  height: 16px;
+  display: block;
+  background: url('http://www.itsalif.info/blogfiles/rating/star-rating.png') 0 0 no-repeat;
+}
+
+.rating-50 { background-position: 0 0; }
+.rating-40 { background-position: -12px 0; } 
+.rating-30 { background-position: -24px 0; }
+.rating-20 { background-position: -36px 0; }
+.rating-10 { background-position: -48px 0; }
+.rating-0 { background-position: -60px 0; }
+ 
+.rating-5  { background-position: -48px -16px; }
+.rating-15 { background-position: -36px -16px; }
+.rating-25 { background-position: -24px -16px; }
+.rating-35 { background-position: -12px -16px; }
+.rating-45 { background-position: 0 -16px; }
+
+
 /***********************/
 
 ol {
@@ -323,14 +367,22 @@ table {
   border: 1px solid #373737;
   margin-bottom: 20px;
   text-align: left;
+  width:800px;
  }
 
 th {
   font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   padding: 10px;
-  background: #373737;
-  color: #fff;
+  background: #f2f2f2;
+  color: #373737;
+  border: 1px solid #373737;
  }
+
+tr{
+    border: 1px solid #373737;
+}
+
+tr:hover {background-color: #aac4d7}
 
 td {
   padding: 10px;
@@ -465,6 +517,7 @@ Full-Width Styles
   background: #212121;
 }
 
+/*****  organizers ******/
 #person_portfolio_container {
   padding-top: 20px;
   background-color: rgba(74, 121, 158,0.3);
