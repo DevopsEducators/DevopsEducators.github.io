@@ -296,6 +296,7 @@ li a:hover{
     width:380px;
     height:380px;
     margin: auto;
+    background: blue;
 }
 
 #hotel_img{
