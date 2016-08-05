@@ -245,6 +245,18 @@ li a:hover{
     background-color: #4A799E;
 }
 
+li h4 a:hover{
+    background-color: transparent;
+}
+
+#a_wiki{
+    color: blue;
+    display: inline;
+    padding: 25px 0;
+    font-size: 25px;
+    margin: 25px auto;
+}
+
 #NavOutDiv{
     text-align: center;
     width: 100%;
